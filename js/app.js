@@ -88,6 +88,7 @@ color.addEventListener('change', e => {
 //                                                     Funciones
 
 // primera funcion 
+// uso de For Each Teplate string y distrututring
 function mostrarAutos(autos) {
     limpiarHTML(); 
     autos.forEach( auto => {  //iterar
@@ -134,6 +135,8 @@ function noResultado() {
     document.querySelector('#resultado').appendChild(noResultado);
 }
 
+
+//FILTRACIONES
 // funcion filtar auto
 function filtrarAuto() {
     const resultado = autos.filter(filtrarMarca).filter(filtrarYear).filter(filtrarMinimo).filter(
